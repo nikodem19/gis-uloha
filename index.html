@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css" type="text/css">
     <style>
         .map {
@@ -43,6 +44,8 @@
             margin-left: 20%;
         }
 
+
+
         .dropdown-content {
             display: none;
             position: absolute;
@@ -64,7 +67,6 @@
 
         .show {display: block;}
 
-
     </style>
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
     <title>OpenLayers example</title>
@@ -74,16 +76,9 @@
     <button onclick="myFunction()" class="dropbtn">Vyberte kraj</button>
     <div id="myDropdown" class="dropdown-content">
         <label for="myInput"></label><input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-        <a onclick="zoomNaKraj(bl)">Bratislavský</a>
-        <a onclick="zoomNaKraj(ta)">Trnavský</a>
-        <a onclick="zoomNaKraj(tc)">Trenčiansky</a>
-        <a onclick="zoomNaKraj(ni)">Nitriansky</a>
-        <a onclick="zoomNaKraj(zi)">Žilinský</a>
-        <a onclick="zoomNaKraj(bb)">Banskobystrický</a>
-        <a onclick="zoomNaKraj(pv)">Prešovský</a>
-        <a onclick="zoomNaKraj(ke)">Košický</a>
     </div>
 </div>
+
 <h2>Mapa krajov Slovenska</h2>
 <div id="map" class="map"></div>
 
